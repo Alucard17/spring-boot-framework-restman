@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import hello.Models.Tag;
 import hello.Dal.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 
 @Controller
 public class TagController {
@@ -32,4 +33,11 @@ public class TagController {
                 System.out.println(tagid);
 		return "greeting";
 	}
+        
+        @GetMapping("/Tag/{id}")
+        public String Tagdetails(@PathVariable(value="id") int id)
+        {
+            
+            return "";
+        }
 }

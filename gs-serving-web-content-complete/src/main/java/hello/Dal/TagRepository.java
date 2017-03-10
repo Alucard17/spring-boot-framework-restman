@@ -21,5 +21,10 @@ public class TagRepository {
             return tagid;
             
         }
+        
+        public Tag getTag_by_id(int id)
+        {
+            return new Tag();
+        }
 	
 }

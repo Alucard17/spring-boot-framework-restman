@@ -4,20 +4,49 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorator="Layout">
       <head>
-        <title>Create Tag</title>         
+        <title>Create Tag</title>  
+        <link href="/assets/css/font-awesome.css" rel="stylesheet" />
     </head>
 <body>
  
 <section layout:fragment="content">
-<form action="#" th:action="@{/Tag}" th:object="${Tag}" method="post">
-<p>Name <input type="text" th:field="*{name}"/></p>
-<p>Description <input type="text" th:field="*{Description}"/></p>
-<p>Status      <select th:field="*{status}">
-			<option value="0">Disable</option>
-			<option value="1">Enable</option>
-			</select></p>
-<p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
-</form>
+        <div class="row">
+            <div class="col-md-12">
+                    <h2>Create Tag</h2>   
+                    <h5>Enter the details below to create form</h5>
+                       
+            </div>
+        </div>
+    <hr/>
+    <div class="row">
+        <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Tag creation
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" action="#" th:action="@{/Tag}" th:object="${Tag}" method="post">
+                            <div class="form-group">
+                                <label>Enter name</label>
+                                <input type="text" class="form-control" th:field="*{name}"/>
+                            </div>
+                            <div class="form-group">
+                                <label>Enter Description</label>
+                                <input type="text" class="form-control" th:field="*{Description}" style="height: 100px;" />
+                            </div>
+                            <div class="form-group">
+                                <label>Status</label>
+                                <select th:field="*{status}">
+                                    <option value="0">Disable</option>
+                                    <option value="1">Enable</option>
+                                </select>
+                            </div>
+                            <p><input type="submit" class="btn btn-primary square-btn-adjust" value="Submit" /> <input type="reset" class="btn btn-danger square-btn-adjust"  value="Reset" /></p>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </div>
 </section>
 </body>
 </html>
