@@ -37,6 +37,11 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>6.0.5</version>
         </dependency>
+        <dependency>
+            <groupId>nz.net.ultraq.thymeleaf</groupId>
+            <artifactId>thymeleaf-layout-dialect</artifactId>
+            <version>1.2.9</version>
+        </dependency>
     </dependencies>
 
     <properties>

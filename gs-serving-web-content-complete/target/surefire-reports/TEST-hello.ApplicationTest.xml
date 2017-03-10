@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="hello.ApplicationTest" time="0.807" tests="3" errors="0" skipped="0" failures="0">
+<testsuite name="hello.ApplicationTest" time="1.042" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/java/jdk1.8.0_121/jre/lib/amd64"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/karan/Desktop/gs-serving-web-content-complete"/>
+    <property name="user.dir" value="/home/karan/NetBeansProjects/spring-boot-framework-restman/gs-serving-web-content-complete"/>
     <property name="java.runtime.version" value="1.8.0_121-b13"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/java/jdk1.8.0_121/jre/lib/endorsed"/>
@@ -59,7 +59,7 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="homePage" classname="hello.ApplicationTest" time="0.087"/>
-  <testcase name="greetingWithUser" classname="hello.ApplicationTest" time="0.699"/>
-  <testcase name="greeting" classname="hello.ApplicationTest" time="0.021"/>
+  <testcase name="homePage" classname="hello.ApplicationTest" time="0.301"/>
+  <testcase name="greetingWithUser" classname="hello.ApplicationTest" time="0.731"/>
+  <testcase name="greeting" classname="hello.ApplicationTest" time="0.01"/>
 </testsuite>
